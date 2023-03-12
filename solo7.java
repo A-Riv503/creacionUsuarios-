@@ -17,20 +17,20 @@ public class solo7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // logica de creacion de usuarios
     String correo, contraseña, password, user, num;
     int contador=0;
     String[] usuario =new String[3];
     Scanner lector= new Scanner(System.in);
     solo7 validarCorreo=new solo7();
     for(int i=0; i<3; i++){
-      System.out.println("ingrese su usuario");
+      System.out.println("ingrese su usuario: ");
       user=lector.nextLine();
-      System.out.println("ingrese su numero de telefono");
+      System.out.println("ingrese su numero de telefono: ");
       num=lector.nextLine();
       int contadorV=0;
       do{
-        System.out.println("ingrese su correo");
+        System.out.println("ingrese su correo: ");
         correo=lector.nextLine();
         if(validarCorreo.validarEmail(correo)){
            if(contador==0){
